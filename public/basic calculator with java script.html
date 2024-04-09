@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div align="center" style="font-size: 160%">
+      <!--for page navigation to home-->
+      <a href="../index.html">Home</a>
+      <!--home button-->
+    </div>
+    <script>
+      function show() {
+        const a = parseInt(document.getElementById("a").value);
+        const b = parseInt(document.getElementById("b").value);
+        document.write("The value of a is=" + a);
+        document.write("<br>The value of b is=" + b);
+        document.write("<br>The sum is =" + (a + b));
+        document.write("<br>The subraction is=" + (a - b));
+        document.write("<br>The division is=" + a / b);
+        document.write("<br>The multiplication is=" + a * b);
+      }
+      function area() {
+        const r = parseInt(document.getElementById("r").value);
+        document.write("The radius of circle =" + r);
+        document.write("<br>Area of circle is=" + 3.14 * r * r);
+      }
+    </script>
+    <title>Java Script</title>
+  </head>
+  <body>
+    <h1>Welcome to Java Script</h1>
+    <form>
+      Enter first number:<br />
+      <input type="text" id="a" /><br />
+      Enter second number:<br />
+      <input type="text" id="b" /><br /><br />
+      <input
+        type="button"
+        value="basic calulations"
+        onClick="show()"
+      /><br /><br />
+    </form>
+    <form>
+      Enter radius:<br />
+      <input type="text" id="r" /><br />
+      <br /><input type="button" value="calculate area" onClick="area()" />
+    </form>
+  </body>
+</html>

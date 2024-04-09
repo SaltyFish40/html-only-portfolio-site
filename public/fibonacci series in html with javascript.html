@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <div align="center" style="font-size: 160%">
+      <!--for page navigation to home-->
+      <a href="../index.html">Home</a>
+      <!--home button-->
+    </div>
+    <title>Fibonacci series</title>
+  </head>
+  <body style="background-color: lightgreen">
+    <h3 style="text-align: center; color: blue">
+      Program to generate the Fibonacci Series
+    </h3>
+    <script type="text/javascript">
+      var limit = prompt(
+        "Enter the limit 'n' to generate the Fibonacci series:"
+      );
+      var f1 = 0;
+      var f2 = 1;
+
+      document.write(
+        "The limit entered to generate the fibonacci series is:",
+        limit,
+        "</br>"
+      );
+      document.write("the fibonacci series: " + "</br>");
+      document.write(f1 + "</br>");
+      document.write(f2 + "</br>");
+
+      var i, f3;
+      for (i = 2; i < limit; i++) {
+        f3 = f1 + f2;
+        document.write(f3 + "</br>");
+        f1 = f2;
+        f2 = f3;
+      }
+    </script>
+  </body>
+</html>

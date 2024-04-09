@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div align="center" style="font-size: 160%">
+      <!--for page navigation to home-->
+      <a href="../index.html">Home</a>
+      <!--home button-->
+    </div>
+    <title>Forms in HTML</title>
+  </head>
+
+  <body>
+    <h1>Registration form using HTML</h1>
+    <form>
+      Enter your name :
+      <input type="text" /><br /><br />
+
+      Enter password:
+      <input type="password" /><br /><br />
+
+      Select gender:
+      <input type="radio" name="gender" />Male
+      <input type="radio" name="gender" />Female <br /><br />
+
+      Select subject :
+      <input type="checkbox" />Web technology <br />
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <input type="checkbox" />Python <br />
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <input type="checkbox" />DBMS <br />
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <input type="checkbox" />OS <br /><br />
+
+      Select your state :
+      <select>
+        <option>Maharashtra</option>
+        <option>Tamilnadu</option>
+        <option>Gujrat</option>
+        <option>Punjab</option>
+        <option>J&K</option>
+        <option>West Bengal</option>
+      </select>
+      <br /><br />
+
+      Enter your address :
+      <textarea rows="5" cols="15"> </textarea>
+      <br /><br />
+
+      Select color :<input type="color" /> <br /><br />
+
+      Upload your file:
+      <input type="file" multiple />
+      <br /><br />
+
+      Enter your Email ID:
+      <input type="email" placeholder="joshuablack@gmail.com" />
+      <br />
+      <br />
+
+      Phone Number:
+      <input
+        type="tel"
+        pattern="[0-9]{2}-[0-9]{10}"
+        required
+        placeholder="91-0000000000"
+      />
+      <br /><br />
+
+      Date-time:
+      <input type="datetime-local" />
+      <br /><br />
+
+      <input type="submit" value="OK" />
+      <input type="reset" value="clear" />
+    </form>
+  </body>
+</html>
